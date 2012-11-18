@@ -34,7 +34,7 @@ chmod 777 auto_download_subtitles.sh
   Download some torrent movie or serie and check if the subtitles are automatically added :)
 
 # Final notes
-  + the downloading of subtitles is handled by [Filebot](http://filebot.sourceforge.net/), which fetches them from OpenSubtitles, Subscene and Sublight - these are community-made subtitles, and so may not exist for all movies/series. The more famous the movie, the more seeds/leechers the torrent has, the more likely subtitles will exist)
+  + the downloading of subtitles is handled by [Filebot](http://filebot.sourceforge.net/), which fetches them from OpenSubtitles, Subscene and Sublight - these are community-made subtitles, and so may not exist for all movies/series. The more famous the movie, the more seeds/leechers the torrent will have, and therefore the more likely subtitles will exist.
   + if the subtitles downloaded automatically are not good, you can try to download other version of the subtitles (if available) manually, by opening yourself the `filebot` program, which is very easy to use
   + I hope Nacho will now be tempted to try out Ubuntu, and discover technological freedom all-beyond windows :)
 
