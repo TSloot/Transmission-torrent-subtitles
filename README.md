@@ -26,7 +26,7 @@ chmod 777 auto_download_subtitles.sh
 # 2. Configure Transmission
    - Open Transmission 
    - Edit / Preferences
-   - Torrents 
+   - Tab Torrents:
     + check: "Call script when torrent is completed" and point to => "auto_download_subtitles.sh"
 
 
