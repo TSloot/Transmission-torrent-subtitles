@@ -39,6 +39,7 @@ chmod 777 auto_download_subtitles.sh
   + I hope Nacho will now be tempted to try out Ubuntu, and discover technological freedom all-beyond windows :)
 
 # Infos:
-  - see https://trac.transmissionbt.com/wiki/Scripts
+  - Transmission scripts and environment variables: https://trac.transmissionbt.com/wiki/Scripts
+  - Filebot usage from CLI: http://filebot.sourceforge.net/cli.html
 
 
