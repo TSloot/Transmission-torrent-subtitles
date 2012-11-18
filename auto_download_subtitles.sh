@@ -1,16 +1,21 @@
 #!/bin/bash
-VERSION="0.1"
+VERSION="0.2"
 function show_help_txt {
-  echo " $0 v$VERSION (license GPLv3)"
+  THISPROG=$(basename $0)
+  echo " $THISPROG v$VERSION (license GPLv3)"
+  echo ""
   echo " DESCRIPTION:"
   echo "    Automatically download spanish subtitles to all videos of directory <MOVIES_DIR>"
-  echo "    If <MOVIES_DIR> is not given, but the Trnamission environment variables $TR_TORRENT_DIR, $TR_TORRENT_NAME are"
-  echo "    defined, then it will consider MOVIES_DIR=$TR_TORRENT_DIR/$TR_TORRENT_NAME"
+  echo '    If <MOVIES_DIR> is not given, but the Transmission environment variables $TR_TORRENT_DIR, $TR_TORRENT_NAME are'
+  echo '    defined, then it will consider MOVIES_DIR=$TR_TORRENT_DIR/$TR_TORRENT_NAME'
+  echo ""
   echo " USAGE:"
-  echo "    $0 <MOVIES_DIR>"
-  echo "    $0   (with environment variables $TR_TORRENT_DIR, $TR_TORRENT_NAME)"
+  echo "    $THISPROG <MOVIES_DIR>"
+  echo "    $THISPROG (with environment variables "'$TR_TORRENT_DIR, $TR_TORRENT_NAME)'
+  echo ""
   echo " EXAMPLE:"
-  echo "    $0 /datas/movies/ink"
+  echo "    $THISPROG /datas/movies/ink"
+  echo ""
 }
 
 env > /tmp/env.tmp
@@ -29,5 +34,13 @@ else
 fi
 
 # Download subtitles
-filebot -r --output srt --lang es -get-subtitles "$MOVIES_DIR"
+  # Language of the subtitles - only info I found about filebot languages was this: http://filebot.sourceforge.net/cli.html
+  #LANGUAGE_CODE="en"
+  #LANGUAGE_CODE="de"
+  #LANGUAGE_CODE="fr"
+  LANGUAGE_CODE="es"
+  #LANGUAGE_CODE="ja"
+  #LANGUAGE_CODE="zh"
+
+filebot -r --output srt --lang $LANGUAGE_CODE -get-subtitles "$MOVIES_DIR"
 exit $?
