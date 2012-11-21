@@ -1,5 +1,5 @@
 # Description
-Purpose: when *Transmission* finishes downloading a torrent, auto-execute *"auto_download_subtitles.sh"*, which in turn will scan the torrent directory for any video files present, and download subtitles for each video file. 
+Purpose: when [Transmission](http://www.transmissionbt.com/) finishes downloading a torrent, auto-execute *"auto_download_subtitles.sh"*, which in turn will scan the torrent directory for any video files present, and download subtitles for each video file. 
 By default the subtitles are in spanish, but its possible to change them (edit `auto_download_subtitles.sh`)  
 
 Install this script, configure Transmission, and all your finished torrents will automatically have subtitles for the videos (using [Filebot](http://filebot.sourceforge.net/))  
