@@ -38,7 +38,7 @@ chmod 777 auto_download_subtitles.sh
   + if the subtitles downloaded automatically are not good, you can try to download other version of the subtitles (if available) manually, by opening yourself the `filebot` program, which is very easy to use
   + I hope Nacho will now be tempted to try out Ubuntu, and discover technological freedom all-beyond windows :)
 
-# Infos:
+# Infos
   - Transmission scripts and environment variables: https://trac.transmissionbt.com/wiki/Scripts
   - Filebot usage from CLI: http://filebot.sourceforge.net/cli.html
 
