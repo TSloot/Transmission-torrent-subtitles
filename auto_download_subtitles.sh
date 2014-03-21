@@ -35,10 +35,10 @@ fi
 
 # Download subtitles
   # Language of the subtitles - only info I found about filebot languages was this: http://filebot.sourceforge.net/cli.html
-  #LANGUAGE_CODE="en"
+  LANGUAGE_CODE="en"
   #LANGUAGE_CODE="de"
   #LANGUAGE_CODE="fr"
-  LANGUAGE_CODE="es"
+  #LANGUAGE_CODE="es"
   #LANGUAGE_CODE="ja"
   #LANGUAGE_CODE="zh"
 
